@@ -1,0 +1,6 @@
+https://www.cloudreach.com/blog/containerize-this-php-apache-mysql-within-docker-containers/
+
+# to get running
+docker-compose up
+
+service mysql start ?
