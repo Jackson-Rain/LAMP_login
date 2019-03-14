@@ -19,11 +19,19 @@ services:
     volumes:
       - ./public_html/:/var/www/html/
   mysql:
-    image: mysql:5.6.40
+    build: './mysql/'
     networks:
       - backend
     environment:
-      - MYSQL_ROOT_PASSWORD=rootpassword
+      MYSQL_ALLOW_EMPTY_PASSWORD: "no"
+      MYSQL_ROOT_PASSWORD: "changeme"
+      # MYSQL_USER: 'testuser'
+      # MYSQL_PASSWORD: 'tpass'
+      MYSQL_DATABASE: 'db'
+    volumes:
+      - ./dbvolume/:/var/lib/mysql
 networks:
   frontend:
   backend:
+volumes:
+  dbvolume:

@@ -3,4 +3,10 @@ https://www.cloudreach.com/blog/containerize-this-php-apache-mysql-within-docker
 # to get running
 docker-compose up
 
-service mysql start ?
+# if I wanna manually setup DBs
+docker exec -it lamp_mysql_1 mysql -uroot -p
+    [enter $MYSQL_ROOT_PASSWORD]
+# or just bash
+docker exec -it lamp_mysql_1 bash
+
+# use Docker Secret instead of password
