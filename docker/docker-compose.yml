@@ -5,7 +5,7 @@ services:
     networks:
       - backend
     volumes:
-      - ./public_html/:/var/www/html/
+      - ../public_html/:/var/www/html/
   apache:
     build: './apache/'
     depends_on:
@@ -17,7 +17,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - ./public_html/:/var/www/html/
+      - ../public_html/:/var/www/html/
   mysql:
     build: './mysql/'
     networks:
@@ -29,7 +29,7 @@ services:
       # MYSQL_PASSWORD: 'tpass'
       MYSQL_DATABASE: 'db'
     volumes:
-      - ./dbvolume/:/var/lib/mysql
+      - ../dbvolume/:/var/lib/mysql
 networks:
   frontend:
   backend:
