@@ -17,3 +17,7 @@ CREATE TABLE IF NOT EXISTS Characters (
     stat_str TINYINT UNSIGNED,
     PRIMARY KEY (id)
 );
+
+GRANT SELECT ON *.* TO 'client@localhost';
+GRANT INSERT ON *.* TO 'client@localhost';
+GRANT UPDATE ON *.* TO 'client@localhost';

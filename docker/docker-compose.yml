@@ -24,9 +24,9 @@ services:
       - backend
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "no"
-      MYSQL_ROOT_PASSWORD: "changeme"
-      # MYSQL_USER: 'testuser'
-      # MYSQL_PASSWORD: 'tpass'
+      MYSQL_ROOT_PASSWORD: "rpass"
+      MYSQL_USER: 'client'
+      MYSQL_PASSWORD: 'cpass'
       MYSQL_DATABASE: 'db'
     volumes:
       - ../dbvolume/:/var/lib/mysql
