@@ -1,0 +1,131 @@
+:root {
+    --stroke-color:#aa99aa;
+    --stroke-color-2:#554555;
+    --v-color:#aa6969;
+    --i-color:#69aa69;
+    --s-color:#aaaa69;
+    /* --stroke-color:#754343; */
+    --stroke3-color: #a04b4b;
+    --margin_px: 4px;
+    --padding_px: 5px;
+
+    --table-row-1: #060606;
+    --table-row-2: #101010;
+}
+
+body {
+    /* position: absolute; */
+    margin: auto;
+    width: 95%;
+    max-width: 1280px;
+    background: #220022;
+    top: 2.5%;
+    /* bottom:2%; */
+    /* padding: var(--padding_px); */
+    /* border: 3px double var(--stroke-color);     */
+    color: var(--stroke-color);
+    /* font-weight: bold; */
+    font-family: "Courier New", Courier, monospace;
+}
+
+div.panel {
+    /*line-height: 50%;*/
+    /* padding: 2%; */
+    padding: 20px;
+    margin: auto;
+    margin-top: 2.5%;
+    /* margin: var(--margin_px); */
+    background: #000000;
+    border: 20px outset var(--stroke-color);    
+    color: var(--stroke-color);
+}
+
+div.cPanel {
+    background: #000000;
+    border: 1px single var(--stroke-color);    
+    color: var(--stroke-color);
+}
+
+div.spacer0 {
+    margin-top: 0%;
+}
+
+div.inline {
+    display: inline;
+}
+
+div.chart {
+    float: right;
+}
+
+div.navbar {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+div.navbar a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #0069b8;
+}
+
+a:visited {
+    color: #0069b8;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a:active {
+    color: #bbbb00;
+}
+
+tr.underlined {
+    text-decoration: underline;
+}
+
+table {
+    border: 1px double var(--stroke-color-2);   
+    /* border-collapse: collapse; */
+    /* padding: 2px; */
+ }
+
+ td, th {
+    border: 1px double var(--stroke-color-2);
+    padding: 4px;
+ }
+
+ canvas.fill {
+     width: '100%';
+ }
+
+ .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 24%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.form-account {
+    /* max-width: 360px; */
+    /* padding: 15px; */
+    /* margin: 0 auto; */
+    /* text-align: justify; */
+ }
+ 
+ .form-account input {
+    margin: var(--padding_px);
+ }
