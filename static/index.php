@@ -6,8 +6,8 @@
     </head>
     <body>
         <?php 
-include 'php/navbar.php';
-include 'php/mysql.php';
+include 'scripts/navbar.php';
+include 'scripts/mysql.php';
         ?>
         <div class="panel">
 

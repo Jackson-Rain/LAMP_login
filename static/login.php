@@ -6,8 +6,8 @@
     </head>
     <body>
         <?php 
-include 'php/navbar.php';
-include 'php/mysql.php';
+include 'scripts/navbar.php';
+include 'scripts/mysql.php';
         ?>
         <div class="panel">
 
@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
 
 
         <div class="panel">
-            <?php include 'php/form_login.php'; ?>
+            <?php include 'scripts/form_login.php'; ?>
         </div>
     </body>
 </html>

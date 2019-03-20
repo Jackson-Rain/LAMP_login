@@ -6,12 +6,12 @@
     </head>
     <body>
         <?php 
-include 'php/navbar.php';
-include 'php/mysql.php';
+include 'scripts/navbar.php';
+include 'scripts/mysql.php';
         ?>
         <div class="panel">
             <h1>Hello!</h1>
-            <?php include 'php/form_createAccount.php'; ?>
+            <?php include 'scripts/form_createAccount.php'; ?>
         </div>
         
     </body>

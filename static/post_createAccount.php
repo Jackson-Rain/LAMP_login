@@ -5,8 +5,8 @@
         <link rel="stylesheet" href="../main.css">
     <body>
         <?php 
-include 'php/navbar.php'; 
-include 'php/mysql.php';
+include 'scripts/navbar.php'; 
+include 'scripts/mysql.php';
         ?>
         <div class="panel">
             Welcome, <?php echo $_POST["username"]; ?>.
@@ -54,7 +54,7 @@ if (!$dont) {
             ?>
             <?php
 if ($dont) {
-    include 'php/form_createAccount.php';
+    include 'scripts/form_createAccount.php';
 }
             ?>
         </div>
